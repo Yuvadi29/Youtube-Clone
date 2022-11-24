@@ -7,14 +7,14 @@ const options = {
         maxResults: '50',
     },
     headers: {
-        'X-RapidAPI-Key': process.env.rapidapi_key,
+        'X-RapidAPI-Key': process.env.RAPID_API_KEY,
         'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
-    }
+    },
 };
 
 
-export const FetchAPI = async (url) => {
+export const fetchFromAPI = async (url) => {
     const { data } = await axios.get(`${Base_Url}/${url}`, options);
 
-    return data; 
-}
+    return data;
+};
