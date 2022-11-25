@@ -8,7 +8,7 @@ import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoCha
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => (
   <Card 
     sx={{ 
-      width: { xs: '100%', sm: '320px', md: "320px", }, 
+      width: { xs: '100%',sm: "358px", md: "320px", }, 
       boxShadow: "none", 
       borderRadius: '15px'
     }}>

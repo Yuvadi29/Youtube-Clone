@@ -17,11 +17,11 @@ export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
 export const categories = [
     { name: 'Home', icon: <HomeIcon />, },
-    { name: 'Mumbiker Nikhil', icon: <PhotoCameraIcon />, },
-    { name: 'Coding', icon: <CodeIcon />, },
-    { name: 'ReactJS', icon: <CodeIcon />, },
-    { name: 'NextJS', icon: <CodeIcon />, },
     { name: 'Music', icon: <MusicNoteIcon /> },
+    { name: 'Mumbiker Nikhil', icon: <PhotoCameraIcon />, },
+    { name: 'Technical Guruji', icon: <PhotoCameraIcon />, },
+    { name: 'Beer Biceps', icon: <PhotoCameraIcon />, },
+    { name: 'Coding', icon: <CodeIcon />, },
     { name: 'Education', icon: <SchoolIcon />, },
     { name: 'Podcast', icon: <GraphicEqIcon />, },
     { name: 'Movie', icon: <OndemandVideoIcon />, },
