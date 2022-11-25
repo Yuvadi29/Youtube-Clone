@@ -9,7 +9,7 @@ import { Box } from '@mui/material';
 import Navbar from './components/Navbar';
 import Feed from './components/Feed';
 import VideoInfo from './components/VideoInfo';
-import ChannelInfo from './components/ChannelInfo';
+import ChannelDetail from './components/ChannelDetail';
 import Search from './components/Search';
 
 const App = () => (
@@ -19,7 +19,7 @@ const App = () => (
             <Routes>
                 <Route path="/" exact element={<Feed />}></Route>
                 <Route path="/video/:id" element={<VideoInfo />}></Route>
-                <Route path="/channel/:id" element={<ChannelInfo />}></Route>
+                <Route path="/channel/:id" element={<ChannelDetail />}></Route>
                 <Route path="/search/:searchTerm" element={<Search />}></Route>
             </Routes>
         </Box>
