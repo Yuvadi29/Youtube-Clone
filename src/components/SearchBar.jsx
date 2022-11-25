@@ -4,10 +4,22 @@ import { Paper, IconButton } from '@mui/material';
 import { Search } from '@mui/icons-material';
 
 const SearchBar = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
+      setSearchTerm('');
+    }
+  }
+
   return (
     <Paper
       component="form" //It will take input of the video from user as a form
-      // onSubmit={() => {{}} }
+      onSubmit={handleSubmit}
       sx={{
         borderRadius: 20,
         backgroundColor: '#282828',
@@ -20,15 +32,18 @@ const SearchBar = () => {
       <input
         className="search-bar"
         placeholder="Search"
-        // value=""
-      // onChange={() => {{}} }
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        style={{
+          color: '#fff',
+        }}
       />
 
       <IconButton
         type="submit"
         sx={{ p: '10px', color: 'white' }}
         aria-label="search"
-        >
+      >
         <Search />
       </IconButton>
     </Paper>
