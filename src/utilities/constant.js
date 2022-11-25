@@ -17,7 +17,7 @@ export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
 export const categories = [
     { name: 'Home', icon: <HomeIcon />, },
-    { name: 'Technical Guruji', icon: <PhotoCameraIcon />, },
+    { name: 'Mumbiker Nikhil', icon: <PhotoCameraIcon />, },
     { name: 'Coding', icon: <CodeIcon />, },
     { name: 'ReactJS', icon: <CodeIcon />, },
     { name: 'NextJS', icon: <CodeIcon />, },

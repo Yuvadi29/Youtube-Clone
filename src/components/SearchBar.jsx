@@ -26,11 +26,13 @@ const SearchBar = () => {
 
       <IconButton
         type="submit"
-        sx={{ p: '10px', color: 'white' }}>
+        sx={{ p: '10px', color: 'white' }}
+        aria-label="search"
+        >
         <Search />
       </IconButton>
     </Paper>
-  )
-}
+  );
+};
 
 export default SearchBar;

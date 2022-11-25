@@ -15,6 +15,7 @@ const Feed = () => {
 
 
   useEffect(() => {
+
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items))
       .catch((error) => console.log(error));
@@ -49,7 +50,7 @@ const Feed = () => {
       </Box>
 
     </Stack>
-  )
-}
+  );
+};
 
 export default Feed;
